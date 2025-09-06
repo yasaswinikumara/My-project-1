@@ -1,0 +1,31 @@
+public enum SeatStatus { SEAT_BOOKED, SEAT_NOT_BOOKED }
+public enum MovieStatus { Movie_Available, Movie_NotAvailable }
+public enum SeatType { NORMAL, EXECUTIVE, PREMIUM, VIP }
+
+class User {
+int userId;
+String name;
+// other details
+}
+
+class Movie {
+int movieId;
+String name;
+MovieStatus status;
+// other details
+}
+
+class Theater {
+int theaterId;
+String name;
+List<Movie> movies;
+// other details
+}
+
+class Booking {
+int bookingId;
+int userId;
+int movieId;
+List<Integer> bookedSeats;
+// other details
+}
